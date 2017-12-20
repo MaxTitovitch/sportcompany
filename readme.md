@@ -1,51 +1,16 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<h1 color = 'red'>Сайт визитка компании SportCompany</h1>
+<h3>Разработка</h3>
+<p>
+  Проект разработан на Laravel Framework 5.4.36. Разработка велась при помощи OpenServer 5.2.7. Работа с базами данных велась при помощи приложения PhpMyAdmin (MySQL 5.7). Технологии, при помощи которых велась разработка:<br>
+	– язык разработки PHP 5.6;<br>
+	– язык разметки HTML; <br>
+	– таблицы стилей CSS.
 </p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
-
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+<p>
+Данный сайт имеет главную страницу 3 основных раздела, страницу статей и несколько внешних ссылок (на GitHub проекта, на страницу «Вконтакте» разработчика (на мою, собственно, страницу)). Общая для всех часть сайта – название сайта, меню сайта, надпись внизу «© 2017 Минск, БГУИР» и ссылка на разработчика сайта (внешняя ссылка). Название сайта, отображаемое на вкладке – «© SportCompany». В начале меню сайта присутствует лого сайта – надпись «SportCompany». Это ссылка на главную страницу.  Меню сайта так же содержит 3 ссылки на основные разделы сайта и одну внешнюю ссылку (ссылку на GitHub проекта). 
+Главная страница начинается с заголовка. Далее следует текст – описание сайта. В нижней части сайта находятся три столбца. Это три интересные факты, каждый из которых содержат название статьи и кнопку «Посмотреть…», нажав которую будет осуществлён переход на страницу статьи. На данной странице содержится заголовок статьи, её текст, фото на эту соответствующую тему и кнопка «<< Назад» – ссылка на главную страницу сайта.
+Три основные разделы сайта, расположенные в его шапке – это «наши магазины», «сотрудники» и «о компании». 
+Раздел «о компании» имеет заголовок, текст и фото (фото директора). 
+Раздел «сотрудники» содержит заголовок, текст и список сотрудников главного офиса.
+Раздел «наши магазины» имеет заголовок, текст и список магазинов в разных городах Беларуси.
+</p>
