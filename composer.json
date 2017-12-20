@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "SportCompany",
+    "description": "Сайт-визитка компании SportCompany",
+    "keywords": ["SportCompany", "Сайт-визитка", "Laravel"],
     "license": "MIT",
     "type": "project",
     "require": {
