@@ -9,9 +9,11 @@ class EmployeesController extends Controller
 {
 	public function index()
 	{
-		$last = 'maxBest';
+		$last = 'maxBestNotIsSet';
 		$structs = Struct::select(['title', 'text'])->get();
 		$tableemployees = Tableemployee::select(['id', 'status', 'position', 'name', 'number'])->get();
-		return view ('employees')->with(['structs' => $structs, 'tableemployees' => $tableemployees, 'last' => $last]);
+		$tableemployees = $tableemployees->sortByDesc('status');
+		
+		return view ('employees')->with(['structs' => $structs[2], 'tableemployees' => $tableemployees, 'last' => $last]);
 	}
 }

@@ -4,6 +4,8 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;
+
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
@@ -34,7 +36,7 @@ class Handler extends ExceptionHandler
     {
         parent::report($exception);
     }
-
+	
     /**
      * Render an exception into an HTTP response.
      *
@@ -62,4 +64,5 @@ class Handler extends ExceptionHandler
 
         return redirect()->guest(route('login'));
     }
+		
 }

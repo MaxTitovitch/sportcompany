@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
 
-    <title>&copy; SportCompany</title>
+<html>
 
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/jumbotron.css') }}" rel="stylesheet">
-
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/"><h1>SportCompany</h1></a>
-        </div>
-        <ul id="navbar" class="menu">
-                    <li><a href="/ourstores">Наши магазины</a></li>
-                    <li><a href="/employees">Сотрудники</a></li>
-                    <li><a href="/company">О компании</a></li>
-                    <li><a href="https://github.com/MaxTitovitch/sportcompany/tree/master/sportcompany">GitHub проекта</a></li>
-        </ul>
-      </div>
-    </nav>
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="description" content="Сайт компании SportCompany" />
+		<meta name="keywords" content="SportCompany, спортивная компания" />
+		<meta name="Viewport" content="width=device-width">
 	
-	@yield('content')
+		<link href="{{ asset('images/icon.ico') }}" rel="shortcut icon" type="image/x-icon">
+		<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('css/style.css') }}" rel="stylesheet">	
+		
+		<title>&copy; SportCompany</title>
+		
+	</head>
+
+	<body>
 	
-	<hr>
-	<footer>
-		<p align = 'center'>
-			&copy; 2017 Минск, БГУИР
-			<br>
-			<a href="https://vk.com/forever_best_in_the_world">РАЗРАБОТЧИК</a>
-		</p>
-	</footer>
-  </body>
+		<header>
+		
+			<a href="/">	
+				<img src = {{ asset('images/menu_sc.jpg') }} >
+			</a>
+
+			<nav class="navbar">
+
+				<a class="navbar-brand"  href="/">
+					<img src = {{ asset('images/SportCompany_Logo.png') }} class = "logo">
+				</a>
+
+				<ul class="menu">
+					<li><a href="/company">Компания</a></li>
+					<li><a href="/ourstores">Отделения</a></li>
+					<li><a href="/employees">Сотрудники</a></li>
+					<li><a href="/form">Обращение</a></li>
+					<li><a href="https://github.com/MaxTitovitch/sportcompany/" target="_blank">НаGitHub</a></li>
+				</ul>
+				
+			</nav>
+
+		</header>
+
+		<main>
+		
+			@yield('content')
+			
+			<a href="#" class="up">
+				<img src = {{ asset('images/icon_top.png') }} class="butup">
+			</a>
+			
+		</main>
+			
+		
+		<footer>
+		
+			<hr>
+		
+			<p class = "foot">
+				<a href="https://vk.com/forever_best_in_the_world" target="_blank">РАЗРАБОТЧИК</a>
+				<br>
+				&copy; 2017 - {{ date('Y') }} Минск, БГУИР
+			</p>
+			
+		</footer>
+		
+	
+	</body>
+	
 </html>

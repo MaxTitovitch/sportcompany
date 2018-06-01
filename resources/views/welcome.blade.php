@@ -2,25 +2,41 @@
 @section ('content')
 
     <div class="jumbotron">
-      <div class="container">
-        <h1> {{ $structs[0]->title}}</h1>
-        <p> {!!$structs[0]->text!!} </p>
-      </div>
+
+		<h1> 
+			{{ $structs->title }}
+		</h1>
+
+		<p> 
+			{!! nl2br($structs->text) !!} 
+		</p>
+
     </div>
 
-    <div class="container">
-		<div class="row">
-		
-			@foreach($sporttables as $Sporttable)
-				<div class="col-md-4">
-					<h3>Интересный факт {{ $Sporttable->id}}</h3>
-					<p>{{$Sporttable->shorttext}}</p>
-					<p><a class="btn btn-primary btn-lg" href=" {{ route('showFacts', ['id' => $Sporttable->id]) }} " role="button">Посмотреть...</a></p>
-				</div>
-			@endforeach
+	
+	<div class="row">
+	
+		@foreach($sporttables as $Sporttable)
+			<div class="col-md-4">
 			
-		</div>
-
+				<p class = "statblue">
+					Интересный факт {{ $Sporttable->id }}
+				</p>
+				
+				<p>
+					{{ $Sporttable->shorttext }}
+				</p>
+				
+				<p>
+					<a class="btn btn-primary btn-lg" href="{{ route('showFacts', ['id' => $Sporttable->id] ) }}">
+						Посмотреть...
+					</a>
+				</p>
+				
+			</div>
+		@endforeach
+		
 	</div>
+
 	
 @endsection

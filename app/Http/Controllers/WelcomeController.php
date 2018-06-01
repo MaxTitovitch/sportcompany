@@ -11,6 +11,7 @@ class WelcomeController extends Controller
 	{
 		$sporttables = Sporttable::select(['id', 'shorttext', 'text'])->get();
 		$structs = Struct::select(['id', 'title', 'text'])->get();
-		return view ('welcome')->with(['structs' => $structs, 'sporttables' => $sporttables]);
+		
+		return view ('welcome')->with(['structs' => $structs[0], 'sporttables' => $sporttables]);
 	}
 }

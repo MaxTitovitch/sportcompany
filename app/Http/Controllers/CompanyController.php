@@ -9,6 +9,7 @@ class CompanyController extends Controller
    	public function index()
 	{
 		$structs = Struct::select(['title', 'text'])->get();
-		return view ('company')->with('structs', $structs);
+		
+		return view ('company')->with('structs', $structs[3]);
 	}
 }

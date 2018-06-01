@@ -2,27 +2,28 @@
 @section ('content')
 
     <div class="jumbotron">
-		<div class="container">
-	  
-			@if($sporttables)
-				<h1>{{$sporttables->shorttext}}</h1>
-				<p>{{ $sporttables->text}}</p>
-				<hr>
-				<p align = "center"> <img src="{{ $sporttables->image}}" width = "1100" height = "200"> </p>
-			@endif
+
+		<h1>
+			{{ $sporttables->shorttext }}
+		</h1>
+
+		<p>
+			{!! $sporttables->text !!}
+		</p>
 		
-		</div>	
-    </div>
-	
-     <div class="container">
-		<div class="row">
-			<div class="col-md-4">
-			
-				<p><a class="btn btn-primary btn-lg" href="/" role="button"><<Назад</a></p>
-			</div>
+		<hr>
+		<p> 
+			<img src = {{ asset( 'images/' . $sporttables->image) }} >
+		</p>
+		<hr>
+		
+		<div class="container">
+			<a class="btn btn-primary btn-lg" href="/">
+				<< Назад
+			</a>	
 		</div>
-	</div>
-	
+				
+    </div>
 	
 	
 @endsection

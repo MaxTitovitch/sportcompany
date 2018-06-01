@@ -9,9 +9,11 @@ class OurstoresController extends Controller
 {
 	public function index()
 	{
-		$last = 'maxBest';
+		$last = 'maxBestNotIsSet';
 		$structs = Struct::select(['title', 'text'])->get();
 		$tableourstores = Tableourstore::select(['id', 'city', 'street', 'number'])->get();
-		return view ('ourstores')->with(['structs' => $structs, 'tableourstores' => $tableourstores, 'last' => $last]);
+		$tableourstores = $tableourstores->sortBy('city');
+		
+		return view ('ourstores')->with(['structs' => $structs[1], 'tableourstores' => $tableourstores, 'last' => $last]);
 	}
 }

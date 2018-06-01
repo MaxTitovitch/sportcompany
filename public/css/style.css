@@ -1,0 +1,146 @@
+
+body { /* Тело сайта */						
+	width: 90%;
+	margin: 20px auto;
+	margin-top: 10;
+	border-width: 1pt;
+	border-style: solid;
+	border-color: silver;
+	max-width: 1920px;
+
+}
+	
+img { /* Картинки */
+	width: 100%;
+	height: 150pt;
+	border-width: 2pt;
+	border-style: solid;
+	border-color: black;
+}
+
+a { /* Ссылки */
+	color: #0000CD;
+}
+
+a:hover { /* Наведенные ссылки */
+	color: black;
+}
+
+label {	/* Текст импуитов формы */
+	width: 15%;
+	display: inline-block;
+}
+
+
+p.statblue { /* Подзаголовки */
+	color: #0000CD;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.menu a { /* Ссылки в главном меню */	
+	color: white !important;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.menu li { /* Пункты списка в главном меню */	
+	padding: 15px;
+	float: left;
+	list-style: none;
+}
+
+.menu li:hover { /* Пункты списка в главном меню при наведении */	
+	border-radius: 5px;
+	background: #183bd9;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.logo {	/* Картинка лого компании */	
+	width: 100%;
+	height: auto;
+	border-width: 0pt;	
+}
+
+.navbar-brand {	/* Лого компании */
+	width: 250pt;
+	padding: 12px 14px;
+	font-weight:bold;
+	font-size: 165%;
+	color: #000;
+	border: 3pt solid rgba(0, 0, 0, 0);
+
+}
+
+.navbar-brand:hover { /* Лого компании при наведении */
+	color:  #183bd9;
+	background: #000;
+	text-decoration: underline;	
+	border-color: #183bd9;
+	border-radius: 50px 50px;
+}
+
+.btn:hover { /* Кнопки при наведении */
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.err { /* Страница ошибки */
+	text-align: center;
+	color: red;
+}
+
+.navbar { /* Стиль шапки меню */
+	background-color:#003399 !important;
+	width: 100%;
+}
+
+.up{ /* Для ссылки кнопки прокрутки вверх */
+	margin-left: 48%;
+}
+
+.butup{ /* Кнопка прокрутки в верх */
+	height: 4%;
+	width: 4%;
+	border-width: 0;
+	opacity: 0.5;
+}
+
+.butup:hover{ /* Кнопка прокрутки в верх при наведении */
+	opacity: 1;
+}
+
+.row { /* Отступ для столбцов (Bootstrap)*/
+	margin: 15px;
+}
+
+.bighr { /* Толстая сплошная полоса hr */
+    border: none;
+    color: #000; 
+    background-color: #000; 
+    height: 2px; 
+}
+
+.str { /* Стиль страниц отзывов */
+	font-weight: bold;
+	text-align: center;
+}
+
+.map { /* Карта отделений компании */	
+	border-width: 2pt;
+	border-style: solid;
+	border-color: black;
+}
+
+.foot { /* Футер */	
+	text-align: center;
+}
+
+
+#message { /* Текстовая область в форме */
+	width: 45%;
+	height: 100pt;
+	resize: none;
+}
+
+

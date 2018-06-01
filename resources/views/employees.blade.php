@@ -2,19 +2,30 @@
 @section ('content')
 
     <div class="jumbotron">
-      <div class="container">
-	  
-        <h1> {{ $structs[2]->title}} </h1>
-		<p> {!!$structs[2]->text!!}</p>
+
+		<h1>
+			{{ $structs->title }}
+		</h1>
 		
+		<p> 
+			{!! $structs->text !!}
+		</p>
+
 		@foreach($tableemployees as $tableemployee)
 			@if ($tableemployee->status != $last)
-				<br><strong>{{$last = $tableemployee->status}} :</strong>
+				
+				<br>
+				<p class = "statblue">
+					{{ $last = $tableemployee->status }} :
+				</p>
+				
 			@endif
-			<p>{{$tableemployee->id}}) {{$tableemployee->name}} - {{$tableemployee->position}}. {{$tableemployee->number}} .</p>
-		@endforeach
-		
-      </div>
+			
+			<p>
+				{{ $tableemployee->id }}) {{ $tableemployee->name }} - {{ $tableemployee->position }}. {{ $tableemployee->number }} .
+			</p>	
+		@endforeach	
+
     </div>
 
 @endsection
