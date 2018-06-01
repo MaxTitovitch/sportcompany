@@ -1,6 +1,6 @@
 <h1 align = 'center'>Сайт визитка компании SportCompany</h1>
 	<p align = 'center'>
-		<img src = 'public/images/SportCompany_Logo.png' height = '10%'>
+		<img src = 'public/images/SportCompany_Logo.png' width = '30%' height = '10%'>
 	</p>
 	<h3>Разработка</h3>
 	<p>
